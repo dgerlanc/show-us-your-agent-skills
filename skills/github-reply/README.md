@@ -46,4 +46,12 @@ short file he keeps editing as he notices new tics he doesn't like
 
 ## status
 
-Stub. Not yet ported from Jeremiah's own skills folder.
+The `SKILL.md` here was transcribed via OCR from the live recording
+([\[00:54:13\]](https://youtube.com/live/Pq3xuChdwxQ?t=3253) onward),
+not ported from Jeremiah's own skills folder. It is **incomplete**:
+Jeremiah did not scroll past the `### Response Patterns` heading on
+camera, so the body cuts off there. The full file will replace this
+one soon.
+
+<a href="https://youtube.com/live/Pq3xuChdwxQ?t=3248"><img src="images/hero.png" alt="Jeremiah Lowin walking through the github-reply skill on Episode 1 of Show Us Your Agent Skills" /></a>
+<sub>Jeremiah Lowin demos `github-reply` on Episode 1 of <em>Show Us Your Agent Skills</em>. <a href="https://youtube.com/live/Pq3xuChdwxQ?t=3248">[00:54:08]</a></sub>

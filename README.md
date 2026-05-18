@@ -17,6 +17,29 @@ This repo turns each episode into browsable, forkable artifacts: markdown
 skills, workflow writeups, and tool references you can read, copy, and
 adapt to your own setup.
 
+## Installation (npx skills)
+
+You can install the skills in this repo with:
+
+```
+npx skills add https://github.com/hugobowne/show-us-your-agent-skills
+```
+
+Install one skill only:
+
+```
+npx skills add https://github.com/hugobowne/show-us-your-agent-skills --skill explain
+```
+
+Check for updates:
+
+```
+npx skills check
+npx skills update
+```
+
+These skills are snapshots from the corresponding live streams. Creators often iterate on their own versions afterwards, so check each skill's README for instructions to pull the latest from the creator when one is linked.
+
 ## Episode 1: Wes McKinney, Jeremiah Lowin, Randy Olson
 
 [Watch on YouTube](https://youtube.com/live/Pq3xuChdwxQ)
@@ -35,15 +58,28 @@ Workflow writeups are coming next, starting with Wes McKinney's stack:
 - **A fleet of long-running sessions.** 4–5 Superpowers projects spec'd and implementing in parallel, unattended; one plan ran 14 hours and 45 tasks without him touching it.
 - **"Off the rails?" review.** No line-level reading. The only question Wes asks is whether the agent strayed structurally or chased scope creep.
 
+## Episode 2: Hilary Mason, Bryan Bischof, Eric Ma, Tomasz Tunguz
+
+[Watch on YouTube](https://youtube.com/live/l37PR-OkYKA)
+
+| Skill | What it does | Guest | Watch |
+|-------|--------------|-------|-------|
+| [prompt-refinement](skills/prompt-refinement) | Interview the user's intent, ask for three variations at different magnitudes of change, score against a rubric you wrote up front. | Hilary Mason (Hidden Door) | [01:01:00](https://youtube.com/live/l37PR-OkYKA?t=3660) |
+| [marimo-pair](skills/marimo-pair) | A coding agent drives a reactive Marimo notebook through a bash bridge into the Python kernel, for human-in-the-loop EDA. | Eric Ma (Moderna) | [00:11:57](https://youtube.com/live/l37PR-OkYKA?t=717) |
+
+| Workflow | What it does | Guest | Watch |
+|----------|--------------|-------|-------|
+| [agentic-eda](workflows/agentic-eda) | Human-in-the-loop EDA: agent renders the next plot, human picks the next question, every claim backed by an artifact. | Eric Ma (Moderna) | [00:23:27](https://youtube.com/live/l37PR-OkYKA?t=1407) |
+| [eval-driven-charts](workflows/eval-driven-charts) | Build an agent-facing chart library by generalising eval failures into features; the package can never regress on an eval it once passed. | Bryan Bischof (Theory Ventures) | [01:25:11](https://youtube.com/live/l37PR-OkYKA?t=5111) |
+| [weekly-gremlins](workflows/weekly-gremlins) | Three agent personas pull from a bad-ideas backlog, pitch and critique each other, and write design docs for moonshots no roadmap would schedule. | Hilary Mason (Hidden Door) | [01:14:20](https://youtube.com/live/l37PR-OkYKA?t=4460) |
+
+Still to come from this episode:
+
+- **Local-first inference.** Tom Tunguz runs Qwen 35B on a Mac M5 at 120 to 140 tokens per second with a 256K context window; cloud only comes in for multi-file rearchitectures or hard bugs.
+
 ## Upcoming episodes
 
 Register on Luma to join live, or get the recording after.
-
-### Episode 2: Hilary Mason, Bryan Bischof, Eric Ma, Tomasz Tunguz
-
-[Register on Luma](https://luma.com/7kfkk6wb)
-
-Joined by Hilary Mason (CEO, HiddenDoor), Bryan Bischof (Theory Ventures), Eric Ma (leads Research DS in the DS/AI group at Moderna Therapeutics), and Tomasz Tunguz (Theory Ventures).
 
 ### Episode 3: Matthew Honnibal & Ines Montani, Eleanor Berger, Alan Nichol, Vincent Warmerdam
 

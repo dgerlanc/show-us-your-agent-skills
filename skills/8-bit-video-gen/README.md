@@ -22,3 +22,6 @@ Then ask your agent:
 ## see it in action
 
 [Episode 1 of *Show Us Your Agent Skills*](https://youtube.com/live/Pq3xuChdwxQ?feature=share): the intro reel and several mid-show cutaways are generated with this skill.
+
+<img src="images/hero.png" alt="Eric Ma's headshot rendered as 8-bit pixel art by the skill" />
+<sub>Eric Ma's headshot, run through `8-bit-video-gen` and stylised by Gemini.</sub>
