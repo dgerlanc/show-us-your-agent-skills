@@ -44,6 +44,8 @@ These skills are snapshots from the corresponding live streams. Creators often i
 
 [Watch on YouTube](https://youtube.com/live/Pq3xuChdwxQ)
 
+Field notes: [Wes McKinney](episode-field-notes/ep-1/wes.md), [Jeremiah Lowin](episode-field-notes/ep-1/jeremiah.md), [Randy Olson](episode-field-notes/ep-1/randy.md).
+
 | Skill | What it does | Guest | Watch |
 |-------|--------------|-------|-------|
 | [explain](skills/explain) | Agent narrates what it just did, like a teammate handing off. | Jeremiah Lowin (Prefect, FastMCP) | [00:46:14](https://youtube.com/live/Pq3xuChdwxQ?t=2774) |
@@ -52,15 +54,16 @@ These skills are snapshots from the corresponding live streams. Creators often i
 | [high-signal-chart-workflow](skills/high-signal-chart-workflow) | Turns a one-line idea into a Tufte-style chart, with an LLM-as-judge verifier loop. | Randy Olson (Goodeye Labs, r/dataisbeautiful) | [01:12:37](https://youtube.com/live/Pq3xuChdwxQ?t=4357) |
 | [8-bit-video-gen](skills/8-bit-video-gen) | Turns guest headshots into short 8-bit pixel-art video clips for livestream intros and cutaways. | Show Us Your Agent Skills | [Episode 1](https://youtube.com/live/Pq3xuChdwxQ) |
 
-Workflow writeups are coming next, starting with Wes McKinney's stack:
-
-- **Agents reviewing agents.** A daemon reads every commit your agents make, so by the time a PR merges, code has been read by agents 4–5 times.
-- **A fleet of long-running sessions.** 4–5 Superpowers projects spec'd and implementing in parallel, unattended; one plan ran 14 hours and 45 tasks without him touching it.
-- **"Off the rails?" review.** No line-level reading. The only question Wes asks is whether the agent strayed structurally or chased scope creep.
+| Workflow | What it does | Guest | Watch |
+|----------|--------------|-------|-------|
+| [agentic-software-factory](workflows/agentic-software-factory) | Run several agent projects in parallel while background review agents read every commit and maintain a fix queue. | Wes McKinney (Posit, pandas) | [00:27:14](https://youtube.com/live/Pq3xuChdwxQ?t=1634) |
+| [second-brain](workflows/second-brain) | Feed a personal agent memory with daily voice memos and use an editable memory substrate for asynchronous work. | Jeremiah Lowin (Prefect, FastMCP) | [00:35:50](https://youtube.com/live/Pq3xuChdwxQ?t=2150) |
 
 ## Episode 2: Hilary Mason, Bryan Bischof, Eric Ma, Tomasz Tunguz
 
 [Watch on YouTube](https://youtube.com/live/l37PR-OkYKA)
+
+Field notes: [Hilary Mason](episode-field-notes/ep-2/hilary.md), [Bryan Bischof](episode-field-notes/ep-2/bryan.md), [Eric Ma](episode-field-notes/ep-2/eric.md), [Tomasz Tunguz](episode-field-notes/ep-2/tom.md).
 
 | Skill | What it does | Guest | Watch |
 |-------|--------------|-------|-------|
@@ -72,14 +75,13 @@ Workflow writeups are coming next, starting with Wes McKinney's stack:
 | [agentic-eda](workflows/agentic-eda) | Human-in-the-loop EDA: agent renders the next plot, human picks the next question, every claim backed by an artifact. | Eric Ma (Moderna) | [00:23:27](https://youtube.com/live/l37PR-OkYKA?t=1407) |
 | [eval-driven-charts](workflows/eval-driven-charts) | Build an agent-facing chart library by generalising eval failures into features; the package can never regress on an eval it once passed. | Bryan Bischof (Theory Ventures) | [01:25:11](https://youtube.com/live/l37PR-OkYKA?t=5111) |
 | [weekly-gremlins](workflows/weekly-gremlins) | Three agent personas pull from a bad-ideas backlog, pitch and critique each other, and write design docs for moonshots no roadmap would schedule. | Hilary Mason (Hidden Door) | [01:14:20](https://youtube.com/live/l37PR-OkYKA?t=4460) |
-
-Still to come from this episode:
-
-- **Local-first inference.** Tom Tunguz runs Qwen 35B on a Mac M5 at 120 to 140 tokens per second with a 256K context window; cloud only comes in for multi-file rearchitectures or hard bugs.
+| [local-first-agents](workflows/local-first-agents) | Default to a local model and thin harness, reaching for cloud inference only for named exceptions. | Tomasz Tunguz (Theory Ventures) | [02:07:42](https://youtube.com/live/l37PR-OkYKA?t=7662) |
 
 ## Episode 3: Matthew Honnibal, Eleanor Berger, Nico Gerold, Alan Nichol, Vincent Warmerdam, Paul Iusztin
 
 [Watch on YouTube](https://youtube.com/live/ud2WzkKeDZs)
+
+Field notes: [Matthew Honnibal](episode-field-notes/ep-3/matt.md), [Eleanor Berger](episode-field-notes/ep-3/eleanor.md), [Nico Gerold](episode-field-notes/ep-3/nico.md), [Alan Nichol](episode-field-notes/ep-3/alan.md), [Vincent Warmerdam](episode-field-notes/ep-3/vincent.md), [Paul Iusztin](episode-field-notes/ep-3/paul.md).
 
 | Skill | What it does | Guest | Watch |
 |-------|--------------|-------|-------|
@@ -92,21 +94,35 @@ Still to come from this episode:
 | [youtube-watch-later-gist-summaries](skills/youtube-watch-later-gist-summaries) | Reads your YouTube Watch Later playlist, summarises every video from its transcript, and publishes each summary as a secret gist. | Eleanor Berger (Jimini Health) | [00:52:57](https://youtube.com/live/ud2WzkKeDZs?t=3177) |
 | [thread-postmortem](skills/thread-postmortem) | Introspects a thread that went sideways, traces each misstep to the instruction behind it, and proposes edits biased toward deletion. | Nico Gerold (Sourcegraph, Amp) | [01:59:04](https://youtube.com/live/ud2WzkKeDZs?t=7144) |
 | [remotion-video](skills/remotion-video) | Encodes a builder's design judgment for programmatic video, so Claude turns a few minutes of recorded audio into a finished explainer. | Alan Nichol (Rasa) | [02:46:00](https://youtube.com/live/ud2WzkKeDZs?t=9960) |
+| [research](skills/research) | Builds and queries a persistent LLM-curated research wiki from Obsidian, Readwise, NotebookLM, GitHub repos, and supplied sources. | Paul Iusztin (Decoding AI) | [02:19:52](https://youtube.com/live/ud2WzkKeDZs?t=8392) |
+
+| Workflow | What it does | Guest | Watch |
+|----------|--------------|-------|-------|
+| [personal-agent-harness](workflows/personal-agent-harness) | Run a personal agent on isolated spare hardware, reachable through Discord or WhatsApp, with autonomy granted gradually. | Eleanor Berger (Jimini Health) | [00:47:50](https://youtube.com/live/ud2WzkKeDZs?t=2870) |
 
 Still to come from this episode:
 
-- **Paul Iusztin's writing loop.** Diff a hand-edit against the agent's draft, extract the signal, and fold it back into a markdown style profile the agent reads next time.
 - **Vincent Warmerdam** showed notebooks as a shared canvas for humans and agents; his Marimo Pair skill already shipped in Episode 2 ([marimo-pair](skills/marimo-pair)).
 
-## Upcoming episodes
+## Episode 4: Hamel Husain, Chris Fonnesbeck, Doug Turnbull
 
-Register on Luma to join live, or get the recording after.
+[Watch on YouTube](https://youtube.com/live/XaYQFtca798)
 
-### Episode 4: Hamel Husain, Chris Fonnesbeck, Doug Turnbull
+Field notes: [Hamel Husain](episode-field-notes/ep-4/hamel.md), [Chris Fonnesbeck](episode-field-notes/ep-4/chris.md), [Doug Turnbull](episode-field-notes/ep-4/doug.md).
 
-[Register on Luma](https://luma.com/ltpzpqgw)
+| Workflow | What it does | Guest | Watch |
+|----------|--------------|-------|-------|
+| [skill-scepticism](workflows/skill-scepticism) | Review shared agent skills before trusting, adapting, replacing, or rejecting them. | Hamel Husain (Parlance Labs) | [00:22:32](https://youtube.com/live/XaYQFtca798?t=1352) |
+| [plan-review-implementation-review](workflows/plan-review-implementation-review) | Ask an agent for a plan, audit it with `review plans`, implement only after the plan is clean, then audit the finished code with `review implementation`. | Chris Fonnesbeck (PyMC Labs) | [01:05:53](https://youtube.com/live/XaYQFtca798?t=3953) |
+| [auto-research-agentic-search](workflows/auto-research-agentic-search) | Let an agent experiment with search-code patches while hidden validation decides what survives. | Doug Turnbull | [01:41:07](https://youtube.com/live/XaYQFtca798?t=6067) |
 
-Joined by Hamel Husain (Parlance Labs), Chris Fonnesbeck (PyMC Labs, veteran analyst for the Mets, Brewers, and Yankees), and Doug Turnbull (led Search at Shopify and Reddit).
+## Upcoming Episode 5: John Berryman, Isaac Flath, Matt Palmer
+
+[Register on Luma](https://luma.com/0t8kiodw)
+
+Friday, June 19, 2026, 9:00 AM - 10:30 AM AEST (GMT+10), live on YouTube.
+
+Joined by John Berryman (Arcturus Labs, early engineer on GitHub Copilot, O'Reilly author), Isaac Flath (Kentro Tech, ex-Answer.AI), and Matt Palmer (Conductor, ex-Replit).
 
 ## More from us
 
