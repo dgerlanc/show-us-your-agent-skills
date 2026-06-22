@@ -1,6 +1,8 @@
 .claude/skills/extracting-guest-proposals-from-transcript/
 .DS_Store
 .env
+.agents/
 scratch/
 local-drafts/
 __pycache__/
+episode-field-notes/ep-5/Episode 5 Workflow Ideas.md
